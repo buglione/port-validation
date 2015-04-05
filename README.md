@@ -11,9 +11,11 @@ In order to test the script portvalidation.rb you must have:
 - keep in the same working directory the Vagrantfile and portvalidation.rb files provided in the same .tgz file.
 - make (not required) some adjunstment to global variables (eg. path to private key) in the portvalidation.rb script
 
-Procedure
+### Procedure
+
 1. launch the ubuntu/trusty64 VM in the same network of the host machine (it will take the net configuration from DHCP, also is possible that the process require the network interface to attach)
-$ vagrant up
+
+`$ vagrant up`
 
 2. run the portvalidation.rb script against the Vagrant VM, defining the ip_of_the_vm and the ports to be validated
 $ ruby portvalidation.rb [ip_of_the_vm] [port1] .. [portN]
